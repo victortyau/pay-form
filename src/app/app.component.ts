@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCreditCard, faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pay-form';
+  faCreditCard = faCreditCard;
+  faExclamationCircle = faExclamationCircle;
 }
