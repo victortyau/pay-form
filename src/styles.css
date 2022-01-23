@@ -2,3 +2,7 @@
 html {
   background: #ebdded;
 }
+
+* {
+ box-sizing: border-box;
+}

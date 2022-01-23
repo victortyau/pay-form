@@ -17,3 +17,11 @@
   vertical-align: middle;
   margin: 0 auto;
 }
+
+.input-box {
+  width: 100%;
+  display: flex;
+  padding: 0 5px;
+  border: 1px solid pink;
+  height:100px;
+}
