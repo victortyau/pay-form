@@ -2,35 +2,35 @@
   <div class="pay-form">
     <div class="input-box column center-items">
       <img class="image" src="assets/fedora.png">
-      <span class="label">Informacion de Pago</span>
+      <span class="label">{{ payment_info }}</span>
     </div>
     <div class="input-box column">
-      <span>Nombre Completo</span>
-      <input type="text" name="" id="" />
+      <span>{{ full_name }}</span>
+      <input type="text" name="name_input" id="name_input" value="{{ name }}" />
     </div>
     <div class="input-box column">
-      <span>Numero de Tarjeta de Credito</span>
-      <input type="text" name="" id="" />
+      <span>{{ card_number_label }}</span>
+      <input type="text" name="card_number_input" id="card_number_input" value="{{ credit_card_number }}" />
       <fa-icon [icon]="faCreditCard"></fa-icon>
     </div>
     <div class="input-box">
       <div class="half-box">
-        <span>Fecha vencimiento</span>
-        <input type="text" name="" id="" />
+        <span>{{ expiration_date_label }}</span>
+        <input type="text" name="expiration_date_input" id="expiration_date_input" value="{{ expiration_date }}" />
       </div>
       <div class="half-box">
-        <span>CVV</span>
-        <input type="text" name="" id="" />
+        <span>{{ cvv_label }}</span>
+        <input type="text" name="cvv_input" id="cvv_input" value="{{ cvv }}" />
         <fa-icon [icon]="faExclamationCircle"></fa-icon>
       </div>
     </div>
     <div class="input-box column">
-      <span>Direccion</span>
-      <input type="text" name="" id="" />
+      <span>{{ address_label }}</span>
+      <input type="text" name="address_input" id="address_input" value="{{ address }}" />
     </div>
     <div class="input-box column">
-      <input type="button" name="" id="" />
-      <span class="small_label">Verificas que esta informacion es correcta</span>
+      <input type="button" name="payment_button" id="payment_button" value="{{ confirm_payment }}"  (click)="make_payment()" />
+      <span class="small_label">{{ verify_data_label }}</span>
     </div>
   </div>
 </div>
