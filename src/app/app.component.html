@@ -1,31 +1,36 @@
 <div class="box">
   <div class="pay-form">
-    <div class="input-box">
-      <span>Informacion de Pago</span>
+    <div class="input-box column center-items">
+      <img class="image" src="assets/fedora.png">
+      <span class="label">Informacion de Pago</span>
     </div>
-    <div class="input-box">
+    <div class="input-box column">
       <span>Nombre Completo</span>
       <input type="text" name="" id="" />
     </div>
-    <div class="input-box">
+    <div class="input-box column">
       <span>Numero de Tarjeta de Credito</span>
       <input type="text" name="" id="" />
       <fa-icon [icon]="faCreditCard"></fa-icon>
     </div>
     <div class="input-box">
-      <span>Fecha vencimiento</span>
-      <input type="text" name="" id="" />
-      <span>CVV</span>
-      <input type="text" name="" id="" />
-      <fa-icon [icon]="faExclamationCircle"></fa-icon>
+      <div class="half-box">
+        <span>Fecha vencimiento</span>
+        <input type="text" name="" id="" />
+      </div>
+      <div class="half-box">
+        <span>CVV</span>
+        <input type="text" name="" id="" />
+        <fa-icon [icon]="faExclamationCircle"></fa-icon>
+      </div>
     </div>
-    <div class="input-box">
+    <div class="input-box column">
       <span>Direccion</span>
       <input type="text" name="" id="" />
     </div>
-    <div class="input-box">
+    <div class="input-box column">
       <input type="button" name="" id="" />
-      <span>Verificas que esta informacion es correcta</span>
+      <span class="small_label">Verificas que esta informacion es correcta</span>
     </div>
   </div>
 </div>
