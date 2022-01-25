@@ -5,31 +5,31 @@
       <span class="label">{{ payment_info }}</span>
     </div>
     <div class="input-box column">
-      <span>{{ full_name }}</span>
-      <input type="text" name="name_input" id="name_input" value="{{ name }}" />
+      <span class="input-label">{{ full_name }}</span>
+      <input type="text" class="input-text" name="name_input" id="name_input" value="{{ name }}" />
     </div>
     <div class="input-box column">
-      <span>{{ card_number_label }}</span>
-      <input type="text" name="card_number_input" id="card_number_input" value="{{ credit_card_number }}" />
+      <span class="input-label">{{ card_number_label }}</span>
+      <input type="text" class="input-text" name="card_number_input" id="card_number_input" value="{{ credit_card_number }}" />
       <fa-icon [icon]="faCreditCard"></fa-icon>
     </div>
     <div class="input-box">
       <div class="half-box">
-        <span>{{ expiration_date_label }}</span>
-        <input type="text" name="expiration_date_input" id="expiration_date_input" value="{{ expiration_date }}" />
+        <span class="input-label">{{ expiration_date_label }}</span>
+        <input type="text" class="input-text" name="expiration_date_input" id="expiration_date_input" value="{{ expiration_date }}" />
       </div>
       <div class="half-box">
-        <span>{{ cvv_label }}</span>
-        <input type="text" name="cvv_input" id="cvv_input" value="{{ cvv }}" />
+        <span class="input-label">{{ cvv_label }}</span>
+        <input type="text" class="input-text" name="cvv_input" id="cvv_input" value="{{ cvv }}" />
         <fa-icon [icon]="faExclamationCircle"></fa-icon>
       </div>
     </div>
     <div class="input-box column">
-      <span>{{ address_label }}</span>
-      <input type="text" name="address_input" id="address_input" value="{{ address }}" />
+      <span class="input-label">{{ address_label }}</span>
+      <input type="text" class="input-text" name="address_input" id="address_input" value="{{ address }}" />
     </div>
     <div class="input-box column">
-      <input type="button" name="payment_button" id="payment_button" value="{{ confirm_payment }}"  (click)="make_payment()" />
+      <input type="button" class="input-text" name="payment_button" id="payment_button" value="{{ confirm_payment }}"  (click)="make_payment()" />
       <span class="small_label">{{ verify_data_label }}</span>
     </div>
   </div>
