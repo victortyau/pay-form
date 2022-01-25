@@ -58,6 +58,7 @@
 
 .half-box {
   width: 50%;
+  display: flex;
 }
 
 .input-text {
