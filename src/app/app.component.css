@@ -72,3 +72,10 @@
   margin-bottom: 10px;
 }
 
+.input-icon {
+  position: relative;
+  display: flex;
+  left: 80%;
+  top: -30%;
+}
+
