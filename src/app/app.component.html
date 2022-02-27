@@ -6,7 +6,7 @@
     </div>
     <div class="input-box column">
       <span class="input-label">{{ full_name }}</span>
-      <input type="text" class="input-text" name="name_input" id="name_input" value="{{ name }}" />
+      <input type="text" class="input-text" [(ngModel)]="name_field" name="name_input" id="name_input" (focus)="check_field()"  (blur)=(validate_field()) />
     </div>
     <div class="input-box column">
       <span class="input-label">{{ card_number_label }}</span>
