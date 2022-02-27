@@ -6,7 +6,6 @@
 }
 
 .pay-form {
-  border: 1px solid #ccc;
   width: 360px;
   height: 600px;
   border-radius: 20px;
@@ -22,14 +21,12 @@
   width: 100%;
   display: flex;
   padding: 15px 25px;
-  border: 1px solid pink;
   height:auto;
 }
 
 .label {
   width: 100%;
   font-size: 23px;
-  border: 1px solid green;
   height: auto;
   text-align: center;
 }
@@ -65,17 +62,18 @@
   border-radius: 10px;
   width: 95%;
   height: 40px;
+  border: 1px solid #E2E6EE;
+  padding-left: 10px;
+  font-size: 20px;
 }
 
 .input-label {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.input-icon {
-  position: relative;
-  display: flex;
-  left: 80%;
-  top: -30%;
+#payment-button {
+  background-color: #CA097A;
+  color: #fff;
+  margin-bottom: 10px;
 }
-

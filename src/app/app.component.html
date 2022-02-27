@@ -11,7 +11,6 @@
     <div class="input-box column">
       <span class="input-label">{{ card_number_label }}</span>
       <input type="text" class="input-text" name="card_number_input" id="card_number_input" value="{{ credit_card_number }}" />
-      <fa-icon [icon]="faCreditCard"></fa-icon>
     </div>
     <div class="input-box">
       <div class="half-box column">
@@ -21,7 +20,6 @@
       <div class="half-box column">
         <span class="input-label">{{ cvv_label }}</span>
         <input type="text" class="input-text" name="cvv_input" id="cvv_input" value="{{ cvv }}" />
-        <fa-icon class="input-icon" [icon]="faExclamationCircle"></fa-icon>
       </div>
     </div>
     <div class="input-box column">
@@ -29,7 +27,7 @@
       <input type="text" class="input-text" name="address_input" id="address_input" value="{{ address }}" />
     </div>
     <div class="input-box column">
-      <input type="button" class="input-text" name="payment_button" id="payment_button" value="{{ confirm_payment }}"  (click)="make_payment()" />
+      <input type="button" class="input-text" name="payment-button" id="payment-button" value="{{ confirm_payment }}"  (click)="make_payment()" />
       <span class="small_label">{{ verify_data_label }}</span>
     </div>
   </div>
