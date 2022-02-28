@@ -10,6 +10,10 @@ export class AppComponent {
 
   // fields
   name_field!: string;
+  card_number_input!: string;
+  expiration_date_input!: string;
+  cvv_input!: string;
+  address_input!: string;
 
   // labels
   title = 'pay-form';
@@ -31,6 +35,10 @@ export class AppComponent {
 
   ngOnInit() {
     this.name_field = this.name;
+    this.card_number_input = this.credit_card_number;
+    this.expiration_date_input = this.expiration_date;
+    this.cvv_input = this.cvv;
+    this.address_input = this.address;
   }
 
   make_payment() {
@@ -43,7 +51,7 @@ export class AppComponent {
 
   validate_field() {
     if (this.name_field == '') {
-     this.name_field = this.name;
+      this.name_field = this.name;
     }
   }
 }

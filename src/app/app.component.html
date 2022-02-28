@@ -6,25 +6,25 @@
     </div>
     <div class="input-box column">
       <span class="input-label">{{ full_name }}</span>
-      <input type="text" class="input-text" [(ngModel)]="name_field" name="name_input" id="name_input" (focus)="check_field()"  (blur)=(validate_field()) />
+      <input type="text" class="input-text" [(ngModel)]="name_field" id="name_field" (focus)="check_field()"  (blur)=(validate_field()) />
     </div>
     <div class="input-box column">
       <span class="input-label">{{ card_number_label }}</span>
-      <input type="text" class="input-text" name="card_number_input" id="card_number_input" value="{{ credit_card_number }}" />
+      <input type="text" class="input-text" [(ngModel)]="card_number_input" id="card_number_input" />
     </div>
     <div class="input-box">
       <div class="half-box column">
         <span class="input-label">{{ expiration_date_label }}</span>
-        <input type="text" class="input-text" name="expiration_date_input" id="expiration_date_input" value="{{ expiration_date }}" />
+        <input type="text" class="input-text" [(ngModel)]="expiration_date_input" id="expiration_date_input" />
       </div>
       <div class="half-box column">
         <span class="input-label">{{ cvv_label }}</span>
-        <input type="text" class="input-text" name="cvv_input" id="cvv_input" value="{{ cvv }}" />
+        <input type="text" class="input-text" [(ngModel)]="cvv_input" id="cvv_input" />
       </div>
     </div>
     <div class="input-box column">
       <span class="input-label">{{ address_label }}</span>
-      <input type="text" class="input-text" name="address_input" id="address_input" value="{{ address }}" />
+      <input type="text" class="input-text" [(ngModel)]="address_input" id="address_input" />
     </div>
     <div class="input-box column">
       <input type="button" class="input-text" name="payment-button" id="payment-button" value="{{ confirm_payment }}"  (click)="make_payment()" />
